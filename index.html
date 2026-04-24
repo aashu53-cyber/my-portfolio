@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans leading-normal tracking-normal">
+
+    <nav class="p-6 flex justify-between items-center bg-gray-800">
+        <h1 class="text-xl font-bold text-blue-400">Portfolio</h1>
+        <div class="space-x-4">
+            <a href="#about" class="hover:text-blue-400">About</a>
+            <a href="#projects" class="hover:text-blue-400">Projects</a>
+            <a href="#skills" class="hover:text-blue-400">Skills</a>
+        </div>
+    </nav>
+
+    <header class="py-20 text-center">
+        <h2 class="text-5xl font-extrabold mb-4">Hi, I'm a Developer & Security Researcher</h2>
+        <p class="text-xl text-gray-400">Specializing in Low-Level Systems and Cyber Security.</p>
+    </header>
+
+    <section id="projects" class="container mx-auto px-6 py-10">
+        <h3 class="text-3xl font-bold border-b-2 border-blue-500 inline-block mb-8">Key Projects</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h4 class="text-xl font-bold text-blue-300">MiniOS Kernel</h4>
+                <p class="mt-2 text-gray-400">A custom x86 operating system built from scratch using C and Assembly. Implemented GDT, IDT, and basic hardware abstractions.</p>
+            </div>
+
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h4 class="text-xl font-bold text-blue-300">Network Honeypot</h4>
+                <p class="mt-2 text-gray-400">A threat monitor designed to detect unauthorized access patterns and log SQLi or DoS attacks in real-time.</p>
+            </div>
+
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h4 class="text-xl font-bold text-blue-300">Esoteric Engine</h4>
+                <p class="mt-2 text-gray-400">A custom interpreter for esoteric languages like Befunge and Brainfuck, showcasing compiler-logic expertise.</p>
+            </div>
+
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h4 class="text-xl font-bold text-blue-300">Multiplayer Gaming Hub</h4>
+                <p class="mt-2 text-gray-400">A real-time web platform utilizing Socket.io and Node.js for low-latency interactive experiences.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="container mx-auto px-6 py-10">
+        <h3 class="text-3xl font-bold border-b-2 border-blue-500 inline-block mb-8">Technical Arsenal</h3>
+        <div class="flex flex-wrap gap-4">
+            <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full font-semibold">C++ (DSA)</span>
+            <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full font-semibold">x86 Assembly</span>
+            <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full font-semibold">Ethical Hacking</span>
+            <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full font-semibold">Network Security</span>
+            <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full font-semibold">Linux Kernel Development</span>
+        </div>
+    </section>
+
+    <footer class="text-center py-10 text-gray-500 border-t border-gray-800">
+        <p>&copy; 2026 Developer Portfolio | Built with Tailwind</p>
+    </footer>
+
+</body>
+</html>
