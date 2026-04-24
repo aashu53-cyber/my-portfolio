@@ -13,54 +13,64 @@
         <div class="space-x-4">
             <a href="#about" class="hover:text-blue-400">About</a>
             <a href="#projects" class="hover:text-blue-400">Projects</a>
-            <a href="#skills" class="hover:text-blue-400">Skills</a>
+            <a href="#videos" class="hover:text-blue-400">Learnings</a>
         </div>
     </nav>
 
-    <header class="py-20 text-center">
-        <h2 class="text-5xl font-extrabold mb-4">Hi, I'm a Developer & Security Researcher</h2>
-        <p class="text-xl text-gray-400">Specializing in Low-Level Systems and Cyber Security.</p>
+    <header id="about" class="py-16 text-center px-4">
+        <h2 class="text-4xl font-extrabold mb-4">Ayush Negi</h2>
+        <p class="max-w-2xl mx-auto text-gray-400">
+            I am a Cyber Security student and systems enthusiast focused on low-level programming and network defense. From building custom x86 kernels to competing in national-level CTFs, I enjoy deconstructing complex systems to understand how they work from the inside out.
+        </p>
     </header>
 
-    <section id="projects" class="container mx-auto px-6 py-10">
-        <h3 class="text-3xl font-bold border-b-2 border-blue-500 inline-block mb-8">Key Projects</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <section id="projects" class="container mx-auto px-6 py-10 border-t border-gray-800">
+        <h3 class="text-2xl font-bold text-blue-400 mb-8">Featured Work</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                <h4 class="font-bold text-xl">MiniOS Kernel</h4>
+                <p class="text-sm text-gray-400 mt-2">Custom x86 OS with GDT, IDT, and hardware abstraction layers.</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                <h4 class="font-bold text-xl">Network Honeypot</h4>
+                <p class="text-sm text-gray-400 mt-2">Threat monitor built in C++ to log and analyze SQLi and DoS patterns.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="videos" class="container mx-auto px-6 py-10 border-t border-gray-800">
+        <h3 class="text-2xl font-bold text-blue-400 mb-8">Self Intro & Lesson Learnings</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             
-            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-                <h4 class="text-xl font-bold text-blue-300">MiniOS Kernel</h4>
-                <p class="mt-2 text-gray-400">A custom x86 operating system built from scratch using C and Assembly. Implemented GDT, IDT, and basic hardware abstractions.</p>
+            <div class="bg-gray-800 rounded-lg overflow-hidden border border-gray-700">
+                <video controls class="w-full h-48 bg-black">
+                    <source src="videos/intro.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="p-4"><p class="font-semibold text-sm">Professional Introduction</p></div>
             </div>
 
-            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-                <h4 class="text-xl font-bold text-blue-300">Network Honeypot</h4>
-                <p class="mt-2 text-gray-400">A threat monitor designed to detect unauthorized access patterns and log SQLi or DoS attacks in real-time.</p>
+            <div class="bg-gray-800 rounded-lg overflow-hidden border border-gray-700">
+                <video controls class="w-full h-48 bg-black">
+                    <source src="videos/lesson1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="p-4"><p class="font-semibold text-sm">Learning: Kernel Development</p></div>
             </div>
 
-            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-                <h4 class="text-xl font-bold text-blue-300">Esoteric Engine</h4>
-                <p class="mt-2 text-gray-400">A custom interpreter for esoteric languages like Befunge and Brainfuck, showcasing compiler-logic expertise.</p>
+            <div class="bg-gray-800 rounded-lg overflow-hidden border border-gray-700">
+                <video controls class="w-full h-48 bg-black">
+                    <source src="videos/lesson2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="p-4"><p class="font-semibold text-sm">Learning: Network Security</p></div>
             </div>
 
-            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-                <h4 class="text-xl font-bold text-blue-300">Multiplayer Gaming Hub</h4>
-                <p class="mt-2 text-gray-400">A real-time web platform utilizing Socket.io and Node.js for low-latency interactive experiences.</p>
-            </div>
         </div>
     </section>
 
-    <section id="skills" class="container mx-auto px-6 py-10">
-        <h3 class="text-3xl font-bold border-b-2 border-blue-500 inline-block mb-8">Technical Arsenal</h3>
-        <div class="flex flex-wrap gap-4">
-            <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full font-semibold">C++ (DSA)</span>
-            <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full font-semibold">x86 Assembly</span>
-            <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full font-semibold">Ethical Hacking</span>
-            <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full font-semibold">Network Security</span>
-            <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full font-semibold">Linux Kernel Development</span>
-        </div>
-    </section>
-
-    <footer class="text-center py-10 text-gray-500 border-t border-gray-800">
-        <p>&copy; 2026 Developer Portfolio | Built with Tailwind</p>
+    <footer class="text-center py-10 text-gray-600">
+        <p>&copy; 2026 Ayush Negi | Systems & Security</p>
     </footer>
 
 </body>
